@@ -1,12 +1,19 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import CTASection from "@/components/landing/cta-section";
+import DemoSection from "@/components/landing/demo-section";
+import HeroDemo from "@/components/landing/hero/hero-section";
+import HowItWorksSection from "@/components/landing/how-it-works-section";
+import { PricingSection } from "@/components/landing/pricing-section";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-     <Button>
-      Get Started
-     </Button>
+    <div className="min-h-screen text-gray-900">
+      <div className="mt-24">
+        <HeroDemo />
+        <DemoSection />
+        <HowItWorksSection />
+        <PricingSection />
+        <CTASection />
+      </div>
     </div>
   );
 }
